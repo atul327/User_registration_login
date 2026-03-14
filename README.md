@@ -1,4 +1,4 @@
-FastAPI User Registration API
+FastAPI User Registration API \n
 📌 Project Description
 
 This project is a User Registration REST API built using FastAPI.
