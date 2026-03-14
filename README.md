@@ -4,7 +4,7 @@
 
 This project is a **User Registration REST API** built using **FastAPI**.
 It allows users to register and store their information in a **MySQL database**.
-The API uses **Pydantic** for request validation and **SQLAlchemy** for database operations.
+The API uses **Pydantic** for request validation and database operations.
 
 ---
 
@@ -13,10 +13,10 @@ The API uses **Pydantic** for request validation and **SQLAlchemy** for database
 * User Registration API
 * RESTful API endpoints
 * Input validation using Pydantic
-* Database integration using SQLAlchemy
+* Database integration
 * Auto-generated API documentation using Swagger UI
 * Dependency Injection using FastAPI `Depends()`
-* Cloud deployment support
+
 
 ---
 
@@ -25,7 +25,6 @@ The API uses **Pydantic** for request validation and **SQLAlchemy** for database
 * **Python**
 * **FastAPI**
 * **MySQL**
-* **SQLAlchemy**
 * **Pydantic**
 * **Uvicorn**
 * **Render (Deployment)**
