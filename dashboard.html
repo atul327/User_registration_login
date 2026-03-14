@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Task</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    width:350px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input{
+    width:93%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#007bff;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    background:#007bff;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+ul{
+    margin-top:20px;
+    padding:0;
+    list-style:none;
+}
+
+li{
+    background:#f1f1f1;
+    padding:10px;
+    border-radius:5px;
+    margin-bottom:8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Create Task</h2>
+
+<input id="title" placeholder="Title">
+<input id="description" placeholder="Description">
+
+<button onclick="createTask()">Create</button>
+
+<ul id="tasks"></ul>
+
+</div>
+
+<script>
+
+function createTask(){
+
+    fetch("http://127.0.0.1:8000/tasks",{
+
+    method:"POST",
+
+    headers:{
+        "Content-Type":"application/json",
+        "Authorization":"Bearer "+localStorage.getItem("token")
+    },
+
+    body:JSON.stringify({
+
+        title:title.value,
+        description:description.value
+
+    })
+
+    })
+
+    .then(res=>res.json())
+    .then(data=>alert(data.message))
+
+}
+
+</script>
+
+</body>
+</html>
