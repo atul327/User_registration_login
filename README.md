@@ -1,51 +1,55 @@
-FastAPI User Registration API 
+# FastAPI User Registration API
 
-📌 Project Description
+## 📌 Project Description
 
-This project is a User Registration REST API built using FastAPI.
-It allows users to register and store their information in a database.
-The API uses MySQL database operations and Pydantic for data validation.
+This project is a **User Registration REST API** built using **FastAPI**.
+It allows users to register and store their information in a **MySQL database**.
+The API uses **Pydantic** for request validation and **SQLAlchemy** for database operations.
 
-🚀 Features
+---
 
-User Registration API
+## 🚀 Features
 
-RESTful API endpoints
+* User Registration API
+* RESTful API endpoints
+* Input validation using Pydantic
+* Database integration using SQLAlchemy
+* Auto-generated API documentation using Swagger UI
+* Dependency Injection using FastAPI `Depends()`
+* Cloud deployment support
 
-Input validation using Pydantic
+---
 
-Database integration using SQLAlchemy
+## 🛠️ Technologies Used
 
-Auto API documentation using Swagger UI
+* **Python**
+* **FastAPI**
+* **MySQL**
+* **SQLAlchemy**
+* **Pydantic**
+* **Uvicorn**
+* **Render (Deployment)**
 
-Dependency Injection using FastAPI Depends()
+---
 
-🛠️ Technologies Used
+## 📖 API Documentation
 
-Python
+FastAPI automatically generates interactive API documentation.
 
-FastAPI
-
-MySQL
-
-Pydantic
-
-Uvicorn
-
-Render(Deployment)
-
-📖 API Documentation
-
-FastAPI automatically generates API docs.
-
-Swagger UI:
-
+**Swagger UI:**
 http://127.0.0.1:8000/docs
 
-👨‍💻 Author
+---
 
-Atul Patle
 
-⭐ If you like this project
+---
 
-Give it a star on GitHub!
+## 👨‍💻 Author
+
+**Atul Patle**
+
+---
+
+## ⭐ Support
+
+If you like this project, please consider giving it a **star ⭐ on GitHub**.
